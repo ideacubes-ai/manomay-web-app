@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --text-xs: clamp(0.7rem, 1vw + 0.3rem, 0.75rem);
+  --text-sm: clamp(0.8rem, 1.2vw + 0.3rem, 0.875rem);
+  --text-base: clamp(0.9rem, 1.5vw + 0.3rem, 1rem);
+  --text-lg: clamp(1rem, 1.8vw + 0.3rem, 1.125rem);
+  --text-xl: clamp(1.1rem, 2vw + 0.4rem, 1.25rem);
+  --text-2xl: clamp(1.2rem, 2.5vw + 0.4rem, 1.5rem);
+  --text-3xl: clamp(1.4rem, 3vw + 0.5rem, 1.875rem);
+  --text-4xl: clamp(1.6rem, 4vw + 0.5rem, 2.25rem);
+  --text-5xl: clamp(1.8rem, 5vw + 0.5rem, 3rem);
+  --text-6xl: clamp(2.2rem, 6vw + 0.5rem, 3.75rem);
+  --text-7xl: clamp(2.8rem, 7vw + 0.5rem, 4.5rem);
+  
+  --font-sans: "Outfit", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-jakarta: "Plus Jakarta Sans", sans-serif;
+  --font-display: "Playfair Display", serif;
+  --font-serif-elegant: "Instrument Serif", serif;
+  --color-brand: #4C1D95;
+  --color-slate-900: #111827;
+  --color-slate-800: #1f2937;
+  --color-slate-700: #374151;
+  --color-slate-600: #4b5563;
+  --color-slate-500: #6b7280;
+  --color-slate-400: #9ca3af;
+  --color-slate-300: #d1d5db;
+  --color-slate-200: #e5e7eb;
+  --color-slate-100: #f3f4f6;
+  --color-slate-50: #f9fafb;
+  --animate-bounce-slow: bounce-slow 3s infinite alternate ease-in-out;
+  @keyframes bounce-slow {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-15px); }
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-white text-slate-900 font-sans antialiased overflow-x-hidden w-full;
+  }
+  html {
+    @apply overflow-x-hidden w-full;
+  }
+}
+
+.grid-bg {
+  background-image: radial-gradient(circle at 1px 1px, #e5e7eb 1px, transparent 0);
+  background-size: 40px 40px;
+}
+
+.bento-card {
+  @apply relative overflow-hidden bg-white border border-slate-200 rounded-2xl p-8 transition-all duration-500 hover:shadow-2xl hover:shadow-brand/5 hover:border-brand/30;
+}
+
+.bento-card-accent {
+  @apply absolute top-0 left-0 w-full h-1 bg-brand opacity-0 transition-opacity duration-300;
+}
+
+.bento-card:hover .bento-card-accent {
+  @apply opacity-100;
+}
+
+div#root:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > section:nth-of-type(4) > div:nth-of-type(3) > div:nth-of-type(1) > div:nth-of-type(1) > h3:nth-of-type(1) > span:nth-of-type(1) {
+  color: #b58af1;
+}
+
+div#root:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > section:nth-of-type(4) > div:nth-of-type(3) > div:nth-of-type(1) > div:nth-of-type(1) > h2:nth-of-type(1) {
+  color: #b58af1;
+}
+
+div#root:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > section:nth-of-type(4) > div:nth-of-type(3) > div:nth-of-type(1) > div:nth-of-type(2) > h2:nth-of-type(1) {
+  color: #b58af1;
+}
+
+div#root:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > section:nth-of-type(4) > div:nth-of-type(3) > div:nth-of-type(1) > div:nth-of-type(2) > h3:nth-of-type(1) > span:nth-of-type(1) {
+  color: #b58af1;
+}
+
+@media (min-width: 1024px) {
+  div#root:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > section:nth-of-type(1) > div:nth-of-type(4) > div:nth-of-type(1) > div:nth-of-type(1) > h1:nth-of-type(1),
+  div#root:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > section:nth-of-type(1) > div:nth-of-type(4) > div:nth-of-type(1) > div:nth-of-type(1) > h1:nth-of-type(1) > span:nth-of-type(1) {
+    font-size: 45px !important;
+  }
+}
+
+div#root:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > section:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > p:nth-of-type(1) {
+  font-size: 19px !important;
+  line-height: 25px !important;
+}
+
+div#root:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > section:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(1) > span:nth-of-type(1) {
+  font-size: 17px !important;
+}
+
+div#root:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > section:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2) > span:nth-of-type(1) {
+  font-size: 17px !important;
+}
+
+div#root:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > section:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(3) > span:nth-of-type(1) {
+  font-size: 17px !important;
+}
+
+div#root:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > section:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(4) > span:nth-of-type(1) {
+  font-size: 17px !important;
+}
+
+div#root:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > section:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > h4:nth-of-type(1) {
+  color: #9a63ee !important;
+}
+
+div#root:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > section:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > ul:nth-of-type(1) > li:nth-of-type(1) > span:nth-of-type(1),
+div#root:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > section:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > ul:nth-of-type(1) > li:nth-of-type(2) > span:nth-of-type(1),
+div#root:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > section:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > ul:nth-of-type(1) > li:nth-of-type(3) > span:nth-of-type(1),
+div#root:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > section:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > ul:nth-of-type(1) > li:nth-of-type(4) > span:nth-of-type(1),
+div#root:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > section:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > ul:nth-of-type(1) > li:nth-of-type(5) > span:nth-of-type(1) {
+  font-size: 18px !important;
+}

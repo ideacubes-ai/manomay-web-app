@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 140" width="100%" height="100%">
+  <!-- Monogram Box -->
+  <g transform="translate(70, 70)">
+    <text x="-24" y="0" font-family="'Playfair Display', Georgia, serif" font-size="60" fill="#333333" text-anchor="middle">M</text>
+    <line x1="-16" y1="30" x2="34" y2="-54" stroke="#333333" stroke-width="3" />
+    <text x="34" y="44" font-family="'Playfair Display', Georgia, serif" font-size="46" fill="#333333" text-anchor="middle">GS</text>
+  </g>
+
+  <!-- Text Area -->
+  <g transform="translate(160, 60)">
+    <text x="0" y="0" font-family="'Inter', system-ui, sans-serif" font-size="32" font-weight="700" letter-spacing="4" fill="#333333">MANOMAY GLOBAL</text>
+    <text x="0" y="38" font-family="'Inter', system-ui, sans-serif" font-size="32" font-weight="600" letter-spacing="4" fill="#333333">SOLUTIONS</text>
+  </g>
+</svg>
