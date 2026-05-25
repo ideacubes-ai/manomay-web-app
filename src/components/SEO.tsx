@@ -1,4 +1,5 @@
 import { Helmet } from 'react-helmet-async';
+import { useLocation } from 'react-router-dom';
 
 interface SEOProps {
   title: string;
@@ -6,7 +7,6 @@ interface SEOProps {
   name?: string;
   type?: string;
   image?: string;
-  url?: string;
 }
 
 export default function SEO({ 
@@ -14,21 +14,24 @@ export default function SEO({
   description, 
   name = "Manomay Global Solutions", 
   type = "website",
-  image = "https://manomayglobalsolutions.com/hero-implementation.jpeg",
-  url = "https://manomayglobalsolutions.com"
+  image = "https://manomayglobalsolutions.com/hero-implementation.jpeg"
 }: SEOProps) {
+  const location = useLocation();
+  const currentUrl = `https://manomayglobalsolutions.com${location.pathname}${location.search}`;
+
   return (
     <Helmet>
       { /* Standard metadata tags */ }
       <title>{title}</title>
       <meta name='description' content={description} />
+      <link rel="canonical" href={currentUrl} />
       { /* End standard metadata tags */ }
       { /* Facebook tags */ }
       <meta property="og:type" content={type} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={image} />
-      <meta property="og:url" content={url} />
+      <meta property="og:url" content={currentUrl} />
       <meta property="og:site_name" content={name} />
       { /* End Facebook tags */ }
       { /* Twitter tags */ }

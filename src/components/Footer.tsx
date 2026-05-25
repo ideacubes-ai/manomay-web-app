@@ -13,10 +13,10 @@ export default function Footer() {
               Architecting high-performance ERP ecosystems for global enterprises. Official Odoo & NetSuite Implementation Partner.
             </p>
             <div className="flex gap-4">
-              <a href="https://www.linkedin.com/company/manomay-global" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center text-slate-400 hover:bg-brand hover:text-white transition-all">
+              <a href="https://www.linkedin.com/company/manomay-global" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" className="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center text-slate-500 hover:bg-brand hover:text-white transition-all">
                 <Linkedin className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center text-slate-400 hover:bg-brand hover:text-white transition-all">
+              <a href="#" aria-label="Twitter Profile" className="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center text-slate-500 hover:bg-brand hover:text-white transition-all">
                 <Twitter className="w-5 h-5" />
               </a>
             </div>
@@ -69,12 +69,12 @@ export default function Footer() {
         </div>
 
         <div className="pt-8 border-t border-slate-100 flex flex-col md:flex-row items-center justify-between gap-4">
-          <div className="text-slate-400 text-sm font-medium">
+          <div className="text-slate-500 text-sm font-medium">
             © {(new Date()).getFullYear()} Manomay Global Solutions. All rights reserved.
           </div>
           <div className="flex gap-8">
-            <a href="#" className="text-slate-400 hover:text-brand text-sm font-medium transition-colors">Privacy Policy</a>
-            <a href="#" className="text-slate-400 hover:text-brand text-sm font-medium transition-colors">Terms of Service</a>
+            <a href="#" className="text-slate-500 hover:text-brand text-sm font-medium transition-colors">Privacy Policy</a>
+            <a href="#" className="text-slate-500 hover:text-brand text-sm font-medium transition-colors">Terms of Service</a>
           </div>
         </div>
       </div>

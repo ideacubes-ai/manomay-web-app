@@ -899,7 +899,7 @@ export default function OdooModulesExplorer() {
             <div className="relative group max-w-xl mx-auto lg:mx-0">
               <div className="absolute -inset-1 bg-gradient-to-r from-brand/20 to-blue-400/20 rounded-[2.1rem] blur opacity-25 group-focus-within:opacity-100 transition duration-1000 group-focus-within:duration-200"></div>
               <div className="relative">
-                <Search className="absolute left-6 top-1/2 -translate-y-1/2 text-slate-400 w-5 h-5 group-focus-within:text-brand transition-all duration-300" />
+                <Search className="absolute left-6 top-1/2 -translate-y-1/2 text-slate-500 w-5 h-5 group-focus-within:text-brand transition-all duration-300" />
                 <input 
                   type="text" 
                   placeholder="Search for a module (e.g. CRM, Inventory, Studio)..." 
@@ -964,7 +964,7 @@ export default function OdooModulesExplorer() {
           {/* Sidebar Filters */}
           <div className="lg:col-span-3 space-y-4">
             <div className="lg:sticky lg:top-32 relative z-20 bg-slate-50/50 lg:bg-transparent backdrop-blur-sm lg:backdrop-blur-none p-4 lg:p-0 rounded-2xl lg:rounded-none">
-              <h4 className="text-xs font-black uppercase tracking-[0.2em] text-slate-400 mb-6 px-4">Categories</h4>
+              <h4 className="text-xs font-black uppercase tracking-[0.2em] text-slate-500 mb-6 px-4">Categories</h4>
               <nav className="space-y-2">
                 <motion.button 
                   whileHover={{ x: 5, y: -2 }}
@@ -1063,7 +1063,7 @@ export default function OdooModulesExplorer() {
                           <motion.div 
                             whileHover={{ rotate: 360, scale: 1.1 }}
                             transition={{ type: "spring", stiffness: 260, damping: 20 }}
-                            className="w-14 h-14 bg-slate-50 rounded-2xl flex items-center justify-center mb-8 text-slate-400 group-hover:bg-brand/10 group-hover:text-brand transition-colors duration-500"
+                            className="w-14 h-14 bg-slate-50 rounded-2xl flex items-center justify-center mb-8 text-slate-500 group-hover:bg-brand/10 group-hover:text-brand transition-colors duration-500"
                           >
                             {mod.icon}
                           </motion.div>
@@ -1088,7 +1088,7 @@ export default function OdooModulesExplorer() {
                             <div className="w-8 h-8 rounded-full bg-slate-50 flex items-center justify-center text-brand/40 group-hover:text-brand group-hover:scale-110 transition-all">
                               <Zap className="w-4 h-4 fill-current" />
                             </div>
-                            <span className="text-xs font-black uppercase tracking-[0.2em] text-slate-400 group-hover:text-brand transition-colors">
+                            <span className="text-xs font-black uppercase tracking-[0.2em] text-slate-500 group-hover:text-brand transition-colors">
                               Ready for Implementation
                             </span>
                           </div>

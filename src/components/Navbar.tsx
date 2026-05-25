@@ -243,6 +243,7 @@ export default function Navbar() {
           <button 
             className="lg:hidden p-2 text-slate-600 hover:text-brand transition-colors"
             onClick={() => setIsOpen(!isOpen)}
+            aria-label="Toggle menu"
           >
             {isOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
@@ -265,6 +266,7 @@ export default function Navbar() {
                 <button 
                   className="p-2 text-slate-600 hover:text-brand transition-colors"
                   onClick={() => setIsOpen(false)}
+                  aria-label="Close menu"
                 >
                   <X size={28} />
                 </button>

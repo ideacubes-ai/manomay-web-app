@@ -197,8 +197,9 @@ export default function Contact() {
                 <label className="block text-sm sm:text-base font-bold text-slate-900 uppercase tracking-wider mb-3">Preferred ERP</label>
                 <div className="flex flex-wrap gap-4 sm:gap-6">
                   {["Odoo", "NetSuite"].map((erp) => (
-                    <label key={erp} className="flex items-center gap-2 sm:gap-3 cursor-pointer group">
+                    <label key={erp} htmlFor={`erp-${erp}`} className="flex items-center gap-2 sm:gap-3 cursor-pointer group">
                       <input
+                        id={`erp-${erp}`}
                         type="radio"
                         name="erpPreference"
                         value={erp}
@@ -217,8 +218,9 @@ export default function Contact() {
               {/* Personal Info */}
               <div className="grid md:grid-cols-2 gap-4 sm:gap-6">
                 <div>
-                  <label className="block text-sm sm:text-base font-bold text-slate-900 uppercase tracking-wider mb-2">First Name</label>
+                  <label htmlFor="firstName" className="block text-sm sm:text-base font-bold text-slate-900 uppercase tracking-wider mb-2">First Name</label>
                   <input
+                    id="firstName"
                     type="text"
                     name="firstName"
                     required
@@ -229,8 +231,9 @@ export default function Contact() {
                   />
                 </div>
                 <div>
-                  <label className="block text-sm sm:text-base font-bold text-slate-900 uppercase tracking-wider mb-2">Last Name</label>
+                  <label htmlFor="lastName" className="block text-sm sm:text-base font-bold text-slate-900 uppercase tracking-wider mb-2">Last Name</label>
                   <input
+                    id="lastName"
                     type="text"
                     name="lastName"
                     required
@@ -243,11 +246,12 @@ export default function Contact() {
               </div>
 
               <div>
-                <label className="block text-sm sm:text-base font-bold text-slate-900 uppercase tracking-wider mb-2">Mobile Number</label>
+                <label htmlFor="mobile" className="block text-sm sm:text-base font-bold text-slate-900 uppercase tracking-wider mb-2">Mobile Number</label>
                 <div className="flex gap-2 sm:gap-3">
                   <div className="relative">
                     <button
                       type="button"
+                      aria-label="Select country code"
                       onClick={() => setIsCountryDropdownOpen(!isCountryDropdownOpen)}
                       className="w-auto min-w-[70px] sm:min-w-[90px] bg-white border border-slate-200 rounded-xl px-2 sm:px-3 py-3 sm:py-4 text-slate-900 flex items-center justify-between gap-1 sm:gap-2 hover:border-brand/40 transition-all focus:outline-none focus:ring-2 focus:ring-brand"
                     >
@@ -266,6 +270,7 @@ export default function Contact() {
                             <button
                               key={`${country.name}-${idx}`}
                               type="button"
+                              aria-label={`Select ${country.name} (${country.code})`}
                               onClick={() => {
                                 setFormData(prev => ({ ...prev, countryCode: country.code, countryFlag: country.flag }));
                                 setIsCountryDropdownOpen(false);
@@ -282,6 +287,7 @@ export default function Contact() {
                     )}
                   </div>
                   <input
+                    id="mobile"
                     type="tel"
                     name="mobile"
                     required
@@ -294,8 +300,9 @@ export default function Contact() {
               </div>
 
               <div>
-                <label className="block text-sm sm:text-base font-bold text-slate-900 uppercase tracking-wider mb-2">Email Address</label>
+                <label htmlFor="email" className="block text-sm sm:text-base font-bold text-slate-900 uppercase tracking-wider mb-2">Email Address</label>
                 <input
+                  id="email"
                   type="email"
                   name="email"
                   required
@@ -309,8 +316,9 @@ export default function Contact() {
               {/* Company Info */}
               <div className="space-y-4 sm:space-y-6 pt-2">
                 <div>
-                  <label className="block text-sm sm:text-base font-bold text-slate-900 uppercase tracking-wider mb-2">Company Name</label>
+                  <label htmlFor="companyName" className="block text-sm sm:text-base font-bold text-slate-900 uppercase tracking-wider mb-2">Company Name</label>
                   <input
+                    id="companyName"
                     type="text"
                     name="companyName"
                     required
@@ -321,9 +329,10 @@ export default function Contact() {
                   />
                 </div>
                 <div className="relative">
-                  <label className="block text-sm sm:text-base font-bold text-slate-900 uppercase tracking-wider mb-2">Industry</label>
+                  <label htmlFor="industry" className="block text-sm sm:text-base font-bold text-slate-900 uppercase tracking-wider mb-2">Industry</label>
                   <div className="relative">
                     <select
+                      id="industry"
                       name="industry"
                       required
                       value={formData.industry}
@@ -339,8 +348,9 @@ export default function Contact() {
                   </div>
                 </div>
                 <div>
-                  <label className="block text-sm sm:text-base font-bold text-slate-900 uppercase tracking-wider mb-2">Company Address</label>
+                  <label htmlFor="companyAddress" className="block text-sm sm:text-base font-bold text-slate-900 uppercase tracking-wider mb-2">Company Address</label>
                   <textarea
+                    id="companyAddress"
                     name="companyAddress"
                     required
                     rows={3}
@@ -351,8 +361,9 @@ export default function Contact() {
                   />
                 </div>
                 <div>
-                  <label className="block text-sm sm:text-base font-bold text-slate-900 uppercase tracking-wider mb-2">Business Needs / Introduction (Optional)</label>
+                  <label htmlFor="businessNeeds" className="block text-sm sm:text-base font-bold text-slate-900 uppercase tracking-wider mb-2">Business Needs / Introduction (Optional)</label>
                   <textarea
+                    id="businessNeeds"
                     name="businessNeeds"
                     rows={4}
                     value={formData.businessNeeds}
