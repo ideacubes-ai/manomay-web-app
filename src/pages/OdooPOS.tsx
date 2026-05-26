@@ -254,7 +254,7 @@ export default function OdooPOS() {
                   <div className="absolute inset-4 rounded-[4rem] overflow-hidden shadow-2xl bg-white border-[12px] border-white z-10">
                     <img 
                       src="/POS_ERP_Support.jpeg" 
-                      alt="Odoo POS Hero" 
+                      alt="Modern Odoo Point of Sale system interface on a terminal" 
                       className="object-cover w-full h-full hover:scale-105 transition-transform duration-700"
                       referrerPolicy="no-referrer"
                     />

@@ -10,6 +10,7 @@ export default function ThankYou() {
       <SEO 
         title="Thank You | Manomay Global Solutions" 
         description="Thank you for contacting Manomay Global Solutions. We will be in touch shortly." 
+        noindex={true}
       />
       
       {/* Animated Background Elements */}

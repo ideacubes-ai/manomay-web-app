@@ -7,6 +7,7 @@ interface SEOProps {
   name?: string;
   type?: string;
   image?: string;
+  noindex?: boolean;
 }
 
 export default function SEO({ 
@@ -14,10 +15,26 @@ export default function SEO({
   description, 
   name = "Manomay Global Solutions", 
   type = "website",
-  image = "https://manomayglobalsolutions.com/hero-implementation.jpeg"
+  image = "https://manomayglobalsolutions.com/hero-implementation.jpeg",
+  noindex = false
 }: SEOProps) {
   const location = useLocation();
   const currentUrl = `https://manomayglobalsolutions.com${location.pathname}${location.search}`;
+
+  // Organization Structured Data
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Manomay Global Solutions",
+    "url": "https://manomayglobalsolutions.com",
+    "logo": "https://manomayglobalsolutions.com/Manomay_Logo_Favicon.png",
+    "description": "Global ERP Implementation & Consulting Partner specializing in NetSuite and Odoo.",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "Customer Support",
+      "email": "Sales@manomayglobalsolutions.com"
+    }
+  };
 
   return (
     <Helmet>
@@ -25,6 +42,8 @@ export default function SEO({
       <title>{title}</title>
       <meta name='description' content={description} />
       <link rel="canonical" href={currentUrl} />
+      {noindex && <meta name="robots" content="noindex, nofollow" />}
+      
       { /* End standard metadata tags */ }
       { /* Facebook tags */ }
       <meta property="og:type" content={type} />
@@ -41,6 +60,11 @@ export default function SEO({
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />
       { /* End Twitter tags */ }
+      
+      { /* Structured Data JSON-LD */ }
+      <script type="application/ld+json">
+        {JSON.stringify(jsonLd)}
+      </script>
     </Helmet>
   );
 }
