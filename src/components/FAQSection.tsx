@@ -45,9 +45,7 @@ export default function FAQSection() {
   return (
     <section className="py-24 bg-slate-50">
       <Helmet>
-        <script type="application/ld+json">
-          {JSON.stringify(faqSchema)}
-        </script>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       </Helmet>
       <div className="max-w-4xl mx-auto px-6">
         <div className="text-center mb-16">
