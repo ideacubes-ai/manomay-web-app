@@ -39,9 +39,7 @@ export default function Home() {
         description="Empowering businesses with custom ERP implementations using Odoo and NetSuite. Discover how our strategic IT consulting drives efficiency and growth." 
       />
       <Helmet>
-        <script type="application/ld+json">
-          {JSON.stringify(localBusinessSchema)}
-        </script>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
       </Helmet>
       <Hero />
       <TrustBar />
