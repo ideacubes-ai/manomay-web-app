@@ -7,6 +7,8 @@ import Advantage from "../components/Advantage";
 import AboutUs from "../components/AboutUs";
 import SavingsCalculator from "../components/SavingsCalculator";
 import Testimonials from "../components/Testimonials";
+import EEATSection from "../components/EEATSection";
+import FAQSection from "../components/FAQSection";
 import SEO from "../components/SEO";
 import { Helmet } from "react-helmet-async";
 
@@ -44,11 +46,13 @@ export default function Home() {
       <Hero />
       <TrustBar />
       <AboutUs />
+      <EEATSection />
       <EfficiencyGrid />
       <Industries />
       <OdooModules />
       <Advantage />
       <Testimonials />
+      <FAQSection />
       <SavingsCalculator />
     </main>
   );

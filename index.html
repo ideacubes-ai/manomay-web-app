@@ -29,22 +29,82 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Manomay Global Solutions",
-        "url": "https://manomayglobalsolutions.com",
-        "logo": "https://manomayglobalsolutions.com/Manomay_Logo_Favicon.png", 
-        "description": "Manomay Global Solutions is an enterprise ERP consulting and software implementation firm specializing in custom Odoo deployments, NetSuite solutions, and hardware integrations.",
-        "knowsAbout": [
-          "Odoo ERP Implementation",
-          "NetSuite Implementation",
-          "POS Hardware Integration",
-          "Enterprise Software Development",
-          "Business Process Automation"
-        ],
-        "address": {
-          "@type": "PostalAddress",
-          "addressCountry": "USA"
-        }
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://manomayglobalsolutions.com/#organization",
+            "name": "Manomay Global Solutions",
+            "url": "https://manomayglobalsolutions.com",
+            "logo": "https://manomayglobalsolutions.com/Manomay_Logo_Favicon.png", 
+            "description": "Manomay Global Solutions specializes in enterprise ERP consulting, Odoo implementation, custom module development, and hardware-to-software integrations.",
+            "address": {
+              "@type": "PostalAddress",
+              "addressRegion": "Texas",
+              "addressCountry": "US"
+            },
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+1 (888) 466-2666",
+              "contactType": "customer service",
+              "email": "info@manomayglobalsolutions.com",
+              "availableLanguage": ["English"]
+            },
+            "knowsAbout": [
+              "Odoo ERP Implementation",
+              "NetSuite Implementation",
+              "POS Hardware Integration",
+              "Enterprise Software Development",
+              "Business Process Automation",
+              "InsurTech",
+              "Digital Transformation",
+              "Core Insurance Platform Implementation"
+            ]
+          },
+          {
+            "@type": "Service",
+            "@id": "https://manomayglobalsolutions.com/#odoo-service",
+            "name": "Odoo Enterprise Implementation",
+            "provider": {"@id": "https://manomayglobalsolutions.com/#organization"},
+            "description": "End-to-end data migrations, complex business logic automation, and custom modules deployment for Odoo ERP, including POS hardware integration."
+          },
+          {
+            "@type": "Service",
+            "@id": "https://manomayglobalsolutions.com/#netsuite-service",
+            "name": "NetSuite Implementation",
+            "provider": {"@id": "https://manomayglobalsolutions.com/#organization"},
+            "description": "Expert NetSuite implementation services driving business process automation and digital transformation."
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://manomayglobalsolutions.com/#faq",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What industries does Manomay serve?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "We primarily serve the retail, e-commerce, manufacturing, IT & professional services, and CRM/Helpdesk sectors. We also have a very strong footprint in the global insurance space (InsurTech) across the Caribbean, US, and other markets."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How long does an Odoo implementation take?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Depending on the complexity and the level of custom module development or hardware integration needed, a standard Odoo implementation takes between 3 to 6 months for mid-size enterprises."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you provide hardware integrations like Datalogic scales for POS?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, we are experts in hardware-to-software bridging and offer our highly-rated om_datalogic module to integrate the Magellan 9400i series via IoT boxes perfectly with Odoo."
+                }
+              }
+            ]
+          }
+        ]
       }
     </script>
   </head>
