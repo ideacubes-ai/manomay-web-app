@@ -120,6 +120,7 @@ export default function Navbar() {
         }
       ]
     },
+    { name: "Blog", path: "/blog" },
   ];
 
   const isActive = (path: string, isAnchor?: boolean) => {

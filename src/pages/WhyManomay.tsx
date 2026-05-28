@@ -75,11 +75,25 @@ const targetSegments = [
 ];
 
 export default function WhyManomay() {
+  const aboutSchema = {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "Why Manomay Global Solutions",
+    "url": "https://manomayglobalsolutions.com/why-manomay",
+    "description": "Discover why businesses trust Manomay Global Solutions for their ERP implementation, technical expertise, and continuous value creation.",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "Manomay Global Solutions",
+      "description": "Global ERP Implementation & Consulting Partner specializing in NetSuite and Odoo."
+    }
+  };
+
   return (
     <div className="bg-white">
       <SEO 
         title="Why Choose Manomay | Expertise & Value" 
         description="Discover why businesses trust Manomay Global Solutions for their ERP implementation, technical expertise, and continuous value creation." 
+        schema={aboutSchema}
       />
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 overflow-hidden bg-slate-900 text-white">

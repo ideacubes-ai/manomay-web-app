@@ -22,6 +22,22 @@ import SEO from "../components/SEO";
 export default function OdooPOS() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
+  const productSchema = {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Odoo Point of Sale (POS) Solutions",
+    "description": "Modernize your retail operations with a robust, offline-capable Odoo POS system seamlessly integrated with inventory and accounting.",
+    "brand": {
+      "@type": "Brand",
+      "name": "Odoo"
+    },
+    "provider": {
+      "@type": "Organization",
+      "name": "Manomay Global Solutions",
+      "url": "https://manomayglobalsolutions.com"
+    }
+  };
+
   const features = [
     {
       icon: <Monitor className="w-8 h-8 text-brand" />,
@@ -180,6 +196,7 @@ export default function OdooPOS() {
       <SEO 
         title="Odoo Point of Sale (POS) Solutions | Manomay Global Solutions" 
         description="Modernize your retail operations with a robust, offline-capable Odoo POS system seamlessly integrated with inventory and accounting." 
+        schema={productSchema}
       />
       {/* Creative Hero Section */}
       <section className="relative pt-32 pb-24 lg:pt-48 lg:pb-40 overflow-hidden bg-[#240b45] text-white">

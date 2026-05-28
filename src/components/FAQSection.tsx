@@ -1,6 +1,7 @@
 import { motion } from "motion/react";
 import { Plus, Minus } from "lucide-react";
 import { useState } from "react";
+import { Helmet } from "react-helmet-async";
 
 const faqs = [
   {
@@ -28,8 +29,26 @@ export default function FAQSection() {
     setOpenIndex(openIndex === index ? null : index);
   };
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map(faq => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  };
+
   return (
     <section className="py-24 bg-slate-50">
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify(faqSchema)}
+        </script>
+      </Helmet>
       <div className="max-w-4xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight font-jakarta mb-4">

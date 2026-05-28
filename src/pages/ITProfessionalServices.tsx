@@ -84,11 +84,25 @@ const ITProfessionalServices = () => {
     }
   ];
 
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "IT & Professional Services ERP Consulting",
+    "provider": {
+      "@type": "Organization",
+      "name": "Manomay Global Solutions"
+    },
+    "description": "Optimize resource allocation, project tracking, and billing with specialized ERP solutions for IT and Professional Services.",
+    "serviceType": "ERP Consulting",
+    "areaServed": "Global"
+  };
+
   return (
     <div className="min-h-screen bg-white selection:bg-brand/20">
       <SEO 
         title="IT & Professional Services ERP | Manomay Global Solutions" 
         description="Optimize resource allocation, project tracking, and billing with specialized ERP solutions for IT and Professional Services." 
+        schema={serviceSchema}
       />
       {/* Creative Hero Section */}
       <section className="relative pt-32 pb-24 lg:pt-48 lg:pb-40 overflow-hidden bg-[#240b45] text-white">

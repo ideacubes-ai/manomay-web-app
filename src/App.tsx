@@ -18,6 +18,8 @@ import CRMHelpDesk from "./pages/CRMHelpDesk";
 import WhyManomay from "./pages/WhyManomay";
 import OdooModulesExplorer from "./pages/OdooModulesExplorer";
 import ThankYou from "./pages/ThankYou";
+import Blog from "./pages/Blog";
+import BlogPost from "./pages/BlogPost";
 import ScrollToTop from "./components/ScrollToTop";
 
 export default function App() {
@@ -37,6 +39,8 @@ export default function App() {
           <Route path="/industries/manufacturing" element={<Manufacturing />} />
           <Route path="/industries/it-professional-services" element={<ITProfessionalServices />} />
           <Route path="/industries/crm-helpdesk" element={<CRMHelpDesk />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:id" element={<BlogPost />} />
           <Route path="/why-manomay" element={<WhyManomay />} />
           <Route path="/thank-you" element={<ThankYou />} />
         </Routes>

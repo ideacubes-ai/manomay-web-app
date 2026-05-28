@@ -49,6 +49,24 @@ const INDUSTRIES = [
 ];
 
 export default function Contact() {
+  const contactSchema = {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact Manomay Global Solutions",
+    "description": "Book a free consultation with our ERP experts at Manomay Global Solutions. Let's discuss your next NetSuite or Odoo implementation project.",
+    "url": "https://manomayglobalsolutions.com/contact",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "Manomay Global Solutions",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "sales@manomayglobalsolutions.com",
+        "contactType": "Customer Support",
+        "availableLanguage": "English"
+      }
+    }
+  };
+
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
     requestType: "Book Free Consultation",
@@ -126,6 +144,7 @@ export default function Contact() {
       <SEO 
         title="Contact Us | Manomay Global Solutions" 
         description="Book a free consultation with our ERP experts at Manomay Global Solutions. Let's discuss your next NetSuite or Odoo implementation project." 
+        schema={contactSchema}
       />
       <div className="max-w-[1600px] mx-auto px-6 lg:px-12">
         <div className="grid lg:grid-cols-2 gap-16 items-start">

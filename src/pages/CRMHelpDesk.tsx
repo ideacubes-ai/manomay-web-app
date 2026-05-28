@@ -84,11 +84,25 @@ const CRMHelpDesk = () => {
     }
   ];
 
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "CRM & Helpdesk Implementation",
+    "provider": {
+      "@type": "Organization",
+      "name": "Manomay Global Solutions"
+    },
+    "description": "Drive customer retention and streamline support operations with our unified CRM and Helpdesk implementations.",
+    "serviceType": "CRM Consulting",
+    "areaServed": "Global"
+  };
+
   return (
     <div className="min-h-screen bg-white selection:bg-brand/20">
       <SEO 
         title="CRM & Helpdesk Solutions | Manomay Global Solutions" 
         description="Drive customer retention and streamline support operations with our unified CRM and Helpdesk implementations." 
+        schema={serviceSchema}
       />
       {/* Creative Hero Section */}
       <section className="relative pt-32 pb-24 lg:pt-48 lg:pb-40 overflow-hidden bg-[#240b45] text-white">

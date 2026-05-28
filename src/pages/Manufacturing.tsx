@@ -95,11 +95,25 @@ export default function Manufacturing() {
     }
   ];
 
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Manufacturing ERP Solutions & Consulting",
+    "provider": {
+      "@type": "Organization",
+      "name": "Manomay Global Solutions"
+    },
+    "description": "Streamline production, manage supply chains, and gain real-time visibility with our customized manufacturing ERP implementations.",
+    "serviceType": "Manufacturing ERP Consulting",
+    "areaServed": "Global"
+  };
+
   return (
     <div className="min-h-screen bg-white selection:bg-brand/20">
       <SEO 
         title="Manufacturing ERP Solutions | Manomay Global Solutions" 
         description="Streamline production, manage supply chains, and gain real-time visibility with our customized manufacturing ERP implementations." 
+        schema={serviceSchema}
       />
       {/* Creative Hero Section */}
       <section className="relative pt-32 pb-24 lg:pt-48 lg:pb-40 overflow-hidden bg-[#240b45] text-white">

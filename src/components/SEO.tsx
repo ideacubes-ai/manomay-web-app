@@ -8,6 +8,7 @@ interface SEOProps {
   type?: string;
   image?: string;
   noindex?: boolean;
+  schema?: object | object[];
 }
 
 export default function SEO({ 
@@ -16,13 +17,14 @@ export default function SEO({
   name = "Manomay Global Solutions", 
   type = "website",
   image = "https://manomayglobalsolutions.com/hero-implementation.jpeg",
-  noindex = false
+  noindex = false,
+  schema
 }: SEOProps) {
   const location = useLocation();
   const currentUrl = `https://manomayglobalsolutions.com${location.pathname}${location.search}`;
 
   // Organization Structured Data
-  const jsonLd = {
+  const defaultSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Manomay Global Solutions",
@@ -35,6 +37,12 @@ export default function SEO({
       "email": "Sales@manomayglobalsolutions.com"
     }
   };
+
+  const schemas = schema 
+    ? Array.isArray(schema) 
+      ? [defaultSchema, ...schema] 
+      : [defaultSchema, schema]
+    : [defaultSchema];
 
   return (
     <Helmet>
@@ -62,9 +70,11 @@ export default function SEO({
       { /* End Twitter tags */ }
       
       { /* Structured Data JSON-LD */ }
-      <script type="application/ld+json">
-        {JSON.stringify(jsonLd)}
-      </script>
+      {schemas.map((s, idx) => (
+        <script key={idx} type="application/ld+json">
+          {JSON.stringify(s)}
+        </script>
+      ))}
     </Helmet>
   );
 }

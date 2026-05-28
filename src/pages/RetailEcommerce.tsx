@@ -70,11 +70,25 @@ export default function RetailEcommerce() {
     }
   ];
 
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Retail & eCommerce ERP Solutions",
+    "provider": {
+      "@type": "Organization",
+      "name": "Manomay Global Solutions"
+    },
+    "description": "Empower your omnichannel retail and eCommerce business with unified ERP solutions that integrate POS, inventory, shipping, and financials.",
+    "serviceType": "Retail ERP Consulting",
+    "areaServed": "Global"
+  };
+
   return (
     <div className="min-h-screen bg-white selection:bg-brand/20">
       <SEO 
         title="Retail & eCommerce ERP Solutions | Manomay Global Solutions" 
         description="Empower your omnichannel retail and eCommerce business with unified ERP solutions that integrate POS, inventory, shipping, and financials." 
+        schema={serviceSchema}
       />
       {/* Creative Hero Section */}
       <section className="relative pt-32 pb-24 lg:pt-48 lg:pb-40 overflow-hidden bg-[#240b45] text-white">

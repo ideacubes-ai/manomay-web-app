@@ -100,11 +100,25 @@ export default function NetSuite() {
     }
   ];
 
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Oracle NetSuite Implementation & Consulting",
+    "provider": {
+      "@type": "Organization",
+      "name": "Manomay Global Solutions"
+    },
+    "description": "Expert Oracle NetSuite implementations tailored to your business needs by Manomay Global Solutions. Enhance your operations with cloud ERP excellence.",
+    "serviceType": "Cloud ERP Consulting",
+    "areaServed": "Global"
+  };
+
   return (
     <div className="min-h-screen bg-white selection:bg-sky-500/20">
       <SEO 
         title="Oracle NetSuite Implementation | Manomay Global Solutions" 
         description="Expert Oracle NetSuite implementations tailored to your business needs by Manomay Global Solutions. Enhance your operations with cloud ERP excellence." 
+        schema={serviceSchema}
       />
       {/* Hero Section */}
       <section className="relative pt-28 pb-24 lg:pt-36 lg:pb-32 overflow-hidden bg-slate-50 border-b border-slate-100">

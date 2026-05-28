@@ -105,11 +105,25 @@ export default function Odoo() {
     { name: "JPL", logo: "https://cdn.simpleicons.org/nasa/white" }
   ];
 
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Odoo Implementation & Consulting",
+    "provider": {
+      "@type": "Organization",
+      "name": "Manomay Global Solutions"
+    },
+    "description": "Simplify operations, improve visibility, and accelerate growth with powerful, customized Odoo ERP implementations.",
+    "serviceType": "ERP Consulting",
+    "areaServed": "Global"
+  };
+
   return (
     <div className="min-h-screen bg-white selection:bg-brand/20 font-sans">
       <SEO 
         title="Odoo Implementation | Manomay Global Solutions" 
         description="Simplify operations, improve visibility, and accelerate growth with powerful, customized Odoo ERP implementations." 
+        schema={serviceSchema}
       />
       {/* Hero Section */}
       <section className="relative pt-28 pb-20 lg:pt-32 lg:pb-24 overflow-hidden bg-slate-50 border-b border-slate-100 flex items-center min-h-[85vh]">

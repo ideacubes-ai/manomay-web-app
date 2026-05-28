@@ -760,6 +760,17 @@ export default function OdooModulesExplorer() {
   const [selectedCategory, setSelectedCategory] = useState<string>(categoryParam || "all");
   const [searchQuery, setSearchQuery] = useState("");
 
+  const pageSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "itemListElement": categories.map((cat, idx) => ({
+      "@type": "ListItem",
+      "position": idx + 1,
+      "name": cat.name,
+      "description": cat.description
+    }))
+  };
+
   // Sync state with URL params
   useEffect(() => {
     if (categoryParam) {
@@ -827,6 +838,7 @@ export default function OdooModulesExplorer() {
       <SEO 
         title="Explore Odoo Modules | Manomay Global Solutions" 
         description="Browse the comprehensive suite of Odoo modules. Find the perfect apps to power your sales, finance, inventory, and operations." 
+        schema={pageSchema}
       />
       {/* Background Glows */}
       <div className="fixed inset-0 pointer-events-none overflow-hidden -z-10">
