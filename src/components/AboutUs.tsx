@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function AboutUs() {
   return (
-    <section id="about" className="py-32 bg-white overflow-hidden border border-[#4c1d95]">
+    <section id="about" className="py-32 bg-white overflow-hidden">
       <div className="max-w-[1600px] mx-auto px-6 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
           <motion.div
