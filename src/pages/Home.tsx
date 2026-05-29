@@ -7,7 +7,6 @@ import Advantage from "../components/Advantage";
 import AboutUs from "../components/AboutUs";
 import SavingsCalculator from "../components/SavingsCalculator";
 import Testimonials from "../components/Testimonials";
-import EEATSection from "../components/EEATSection";
 import FAQSection from "../components/FAQSection";
 import SEO from "../components/SEO";
 import { Helmet } from "react-helmet-async";
@@ -22,7 +21,7 @@ export default function Home() {
     "url": "https://manomayglobalsolutions.com",
     "telePhone": "+1 (888) 466-2666",
     "email": "info@manomayglobalsolutions.com",
-    "description": "Global ERP Implementation & Consulting Partner specializing in NetSuite and Odoo.",
+    "description": "Global ERP Implementation Consulting Agency specializing in Odoo and offering expert NetSuite implementations.",
     "address": {
       "@type": "PostalAddress",
       "addressCountry": "US"
@@ -44,7 +43,6 @@ export default function Home() {
       <Hero />
       <TrustBar />
       <AboutUs />
-      <EEATSection />
       <EfficiencyGrid />
       <Industries />
       <OdooModules />

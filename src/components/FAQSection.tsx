@@ -6,7 +6,7 @@ import { Helmet } from "react-helmet-async";
 const faqs = [
   {
     question: "What industries does Manomay serve?",
-    answer: "We primarily serve the retail, e-commerce, manufacturing, IT & professional services, and CRM/Helpdesk sectors. We also have a very strong footprint in the global insurance space (InsurTech) across the Caribbean, US, and other markets.",
+    answer: "We primarily serve the retail, e-commerce, manufacturing, IT & professional services, and CRM/Helpdesk sectors.",
   },
   {
     question: "How long does an Odoo implementation take?",

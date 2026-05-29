@@ -296,7 +296,7 @@ export default function NetSuite() {
             
             <div>
               <h2 className="text-base font-bold tracking-widest text-brand uppercase mb-4">Why Choose Us?</h2>
-              <h3 className="text-3xl lg:text-4xl font-black mb-6 tracking-tight leading-tight text-white font-jakarta">High-Stakes <span className="font-display italic font-normal text-brand">Strategic</span> Partners.</h3>
+              <h3 className="text-3xl lg:text-4xl font-black mb-6 tracking-tight leading-tight text-white font-jakarta">High-Stakes <span className="font-display italic font-normal text-brand">Strategic</span> Experts.</h3>
               <ul className="space-y-5">
                 {[
                   "CFO-Focused Implementation Approach",

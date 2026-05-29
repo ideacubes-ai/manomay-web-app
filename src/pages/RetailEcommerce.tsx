@@ -271,7 +271,7 @@ export default function RetailEcommerce() {
         <div className="text-center mb-16">
           <h2 className="text-base font-bold tracking-widest text-brand uppercase mb-4 font-jakarta">Why Manomay?</h2>
           <h3 className="text-3xl lg:text-5xl font-black text-slate-900 tracking-tight font-jakarta">
-            Strategic <span className="font-display italic font-normal text-brand">Retail Partners.</span>
+            Strategic <span className="font-display italic font-normal text-brand">Retail Experts.</span>
           </h3>
         </div>
 
@@ -294,7 +294,7 @@ export default function RetailEcommerce() {
             },
             {
               title: "Ongoing Support, Not Just Launch",
-              desc: "Most implementation partners disappear after go-live. Manomay stays — with dedicated support to handle updates, new features, and growing pains.",
+              desc: "Many implementation agencies disappear after go-live. Manomay stays — with dedicated support to handle updates, new features, and growing pains.",
               icon: <LifeBuoy className="w-6 h-6 text-brand" />
             },
             {

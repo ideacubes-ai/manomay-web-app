@@ -5,7 +5,7 @@ export default function TrustBar() {
   const stats = [
     { 
       label: "Odoo & NetSuite ERP", 
-      value: "Implementation Specialist",
+      value: "Implementation Experts",
       icon: <ShieldCheck className="w-5 h-5" />
     },
     { 

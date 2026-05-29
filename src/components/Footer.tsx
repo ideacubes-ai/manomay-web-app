@@ -10,7 +10,7 @@ export default function Footer() {
           <div className="col-span-1 md:col-span-1">
             <Logo className="mb-6" />
             <p className="text-slate-500 text-sm leading-relaxed mb-6">
-              Architecting high-performance ERP ecosystems for global enterprises. Official Odoo & NetSuite Implementation Partner.
+              Architecting high-performance ERP ecosystems for global enterprises. Official Odoo Partner and NetSuite Implementation Experts.
             </p>
             <div className="flex gap-4">
               <a href="https://www.linkedin.com/company/manomay-global" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" className="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center text-slate-500 hover:bg-brand hover:text-white transition-all">

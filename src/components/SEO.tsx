@@ -30,7 +30,7 @@ export default function SEO({
     "name": "Manomay Global Solutions",
     "url": "https://manomayglobalsolutions.com",
     "logo": "https://manomayglobalsolutions.com/Manomay_Logo_Favicon.png",
-    "description": "Global ERP Implementation & Consulting Partner specializing in NetSuite and Odoo.",
+    "description": "Global ERP Implementation Consulting Agency specializing in Odoo and offering expert NetSuite implementations.",
     "contactPoint": {
       "@type": "ContactPoint",
       "contactType": "Customer Support",

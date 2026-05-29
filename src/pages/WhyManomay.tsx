@@ -84,7 +84,7 @@ export default function WhyManomay() {
     "mainEntity": {
       "@type": "Organization",
       "name": "Manomay Global Solutions",
-      "description": "Global ERP Implementation & Consulting Partner specializing in NetSuite and Odoo."
+      "description": "Global ERP Implementation Consulting Agency specializing in Odoo and offering expert NetSuite implementations."
     }
   };
 

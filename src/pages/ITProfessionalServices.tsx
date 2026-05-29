@@ -279,7 +279,7 @@ const ITProfessionalServices = () => {
             <div className="order-1 lg:order-2">
               <h2 className="text-sm font-bold tracking-widest text-brand uppercase mb-4">The Advisor Advantage</h2>
               <h3 className="text-3xl font-black text-slate-900 mb-8 font-jakarta">
-                Why Partner <br/> with <span className="font-display italic font-normal text-brand">Manomay?</span>
+                Why Choose <br/> <span className="font-display italic font-normal text-brand">Manomay?</span>
               </h3>
               <p className="text-lg text-slate-600 mb-8 leading-relaxed font-light">
                 We don't just install software; we design adoption strategies. From complex billing model configuration to timesheet discipline plans, we ensure your Odoo setup scales with your client base.

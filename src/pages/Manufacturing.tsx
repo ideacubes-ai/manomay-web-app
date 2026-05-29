@@ -294,7 +294,7 @@ export default function Manufacturing() {
         <div className="text-center mb-16">
           <h2 className="text-sm font-bold tracking-widest text-brand uppercase mb-4 font-jakarta">Why Manomay?</h2>
           <h3 className="text-3xl lg:text-5xl font-black text-slate-900 tracking-tight font-jakarta">
-            Technical <span className="font-display italic font-normal text-brand">Factory Partners.</span>
+            Technical <span className="font-display italic font-normal text-brand">Factory Experts.</span>
           </h3>
         </div>
 
