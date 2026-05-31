@@ -1,6 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import { motion } from "motion/react";
 import Markdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 import { Calendar, User, Clock, ArrowLeft, ChevronRight } from "lucide-react";
 import SEO from "../components/SEO";
 import { blogPosts } from "../data/blogPosts";
@@ -114,7 +115,7 @@ export default function BlogPost() {
             className="bg-white rounded-[2rem] shadow-2xl shadow-slate-200/50 p-8 md:p-12 lg:p-16 border border-slate-100"
           >
             <div className="markdown-body">
-              <Markdown>{post.content}</Markdown>
+              <Markdown remarkPlugins={[remarkGfm]}>{post.content}</Markdown>
             </div>
           </motion.article>
 

@@ -88,10 +88,10 @@ export default function Blog() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className={`group bg-white rounded-3xl border border-slate-200 overflow-hidden hover:shadow-2xl hover:shadow-brand/5 hover:border-brand/30 transition-all duration-500 flex ${index === 0 ? 'flex-col lg:flex-row lg:col-span-3' : 'flex-col'}`}
+                className="group bg-white rounded-3xl border border-slate-200 overflow-hidden hover:shadow-2xl hover:shadow-brand/5 hover:border-brand/30 transition-all duration-500 flex flex-col"
               >
                 {/* Image Container */}
-                <div className={`overflow-hidden relative ${index === 0 ? 'lg:w-[50%] h-72 lg:h-auto' : 'h-64'}`}>
+                <div className="overflow-hidden relative h-64">
                   <div className="absolute top-4 left-4 z-10 px-3 py-1 bg-white/90 backdrop-blur-md rounded-full text-xs font-bold text-brand uppercase tracking-wider">
                     {post.category}
                   </div>
@@ -104,7 +104,7 @@ export default function Blog() {
                 </div>
                 
                 {/* Content */}
-                <div className={`p-8 flex-1 flex flex-col ${index === 0 ? 'lg:justify-center lg:p-12' : ''}`}>
+                <div className="p-8 flex-1 flex flex-col">
                   {/* Meta */}
                   <div className="flex items-center gap-4 text-sm text-slate-500 font-medium mb-4">
                     <div className="flex items-center gap-1.5">
@@ -118,11 +118,11 @@ export default function Blog() {
                     </div>
                   </div>
 
-                  <h3 className={`${index === 0 ? 'text-3xl lg:text-4xl' : 'text-2xl'} font-bold text-slate-900 leading-tight mb-4 group-hover:text-brand transition-colors`}>
+                  <h3 className="text-2xl font-bold text-slate-900 leading-tight mb-4 group-hover:text-brand transition-colors">
                     {post.title}
                   </h3>
                   
-                  <p className={`text-slate-600 leading-relaxed mb-8 flex-1 ${index === 0 ? 'text-lg max-w-2xl' : ''}`}>
+                  <p className="text-slate-600 leading-relaxed mb-8 flex-1">
                     {post.excerpt}
                   </p>
                   
