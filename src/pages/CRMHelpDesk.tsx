@@ -23,7 +23,7 @@ const CRMHelpDesk = () => {
   const challenges = [
     "Sales and support work in silos: When support can't see what was promised or bought, every interaction starts from zero and the customer pays.",
     "Follow-ups fall through the cracks: Without automated reminders, leads go cold and open tickets age past deadlines.",
-    "SLA breaches go unnoticed: Without live tracking, tickets exceed response deadlines before anyone knows — the customer finds out first.",
+    "SLA breaches go unnoticed: Without live tracking, tickets exceed response deadlines before anyone knows - the customer finds out first.",
     "No single view of the customer: Call notes, emails, and tickets are scattered across systems, preventing a complete relationship picture.",
     "Performance is unmeasurable: Impossible to know where the team is strong and where it's losing customers without unified reporting."
   ];
@@ -31,7 +31,7 @@ const CRMHelpDesk = () => {
   const results = [
     {
       title: "360° Customer Record",
-      desc: "Every interaction — sales, support, email, call — in one place, visible to any team member who needs it.",
+      desc: "Every interaction - sales, support, email, call - in one place, visible to any team member who needs it.",
       icon: <Users className="w-6 h-6 text-brand" />
     },
     {

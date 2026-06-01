@@ -311,7 +311,7 @@ const categories = [
     name: "Human Resources",
     icon: <HeartHandshake className="w-6 h-6" />,
     color: "bg-rose-500",
-    description: "Manage your most valuable asset—your people.",
+    description: "Manage your most valuable asset - your people.",
     tips: "Centralizing employee data reduces administrative overhead. Combine Payroll with Attendances for automated, worry-free salary calculation.",
     modules: [
       { 

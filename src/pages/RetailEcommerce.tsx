@@ -31,7 +31,7 @@ export default function RetailEcommerce() {
     },
     {
       title: "Slow, manual order processing",
-      description: "Orders placed online require manual steps to fulfill and invoice — creating delays, errors, and a team buried in admin."
+      description: "Orders placed online require manual steps to fulfill and invoice - creating delays, errors, and a team buried in admin."
     },
     {
       title: "Zero visibility into profitability",
@@ -60,7 +60,7 @@ export default function RetailEcommerce() {
     },
     {
       title: "Built-in CRM & Loyalty",
-      description: "Customer history and rewards are native to the system—no integrations needed to reward your best buyers.",
+      description: "Customer history and rewards are native to the system - no integrations needed to reward your best buyers.",
       icon: <HeartHandshake className="w-8 h-8 text-brand" />
     },
     {
@@ -177,7 +177,7 @@ export default function RetailEcommerce() {
               Spreadsheets are <br className="hidden md:block"/> <span className="font-display italic font-normal text-brand">Silent Profit Killers.</span>
             </h3>
             <p className="text-xl text-slate-600 leading-relaxed font-light">
-              If your inventory lives in a spreadsheet, your POS is one system, and your online store is another — you are losing money every single day without knowing it.
+              If your inventory lives in a spreadsheet, your POS is one system, and your online store is another - you are losing money every single day without knowing it.
             </p>
           </div>
 
@@ -189,7 +189,7 @@ export default function RetailEcommerce() {
               className="space-y-8"
             >
               <p className="text-lg text-slate-600 leading-relaxed">
-                Retailers today don't just compete on price. They compete on speed, accuracy, and experience. A customer who finds a product out of stock online, or receives the wrong item, or waits three days for an invoice — leaves and doesn't come back. 
+                Retailers today don't just compete on price. They compete on speed, accuracy, and experience. A customer who finds a product out of stock online, or receives the wrong item, or waits three days for an invoice - leaves and doesn't come back. 
               </p>
               <div className="bg-slate-50 p-8 rounded-3xl border border-slate-100">
                 <p className="text-xl text-slate-900 font-bold italic leading-relaxed">
@@ -284,7 +284,7 @@ export default function RetailEcommerce() {
             },
             {
               title: "POS & e-Commerce Mastery",
-              desc: "Manomay handles the full technical integration between your physical store, Odoo POS, and online storefront — including payment gateways and shipping carriers.",
+              desc: "Manomay handles the full technical integration between your physical store, Odoo POS, and online storefront - including payment gateways and shipping carriers.",
               icon: <Smartphone className="w-6 h-6 text-brand" />
             },
             {
@@ -294,12 +294,12 @@ export default function RetailEcommerce() {
             },
             {
               title: "Ongoing Support, Not Just Launch",
-              desc: "Many implementation agencies disappear after go-live. Manomay stays — with dedicated support to handle updates, new features, and growing pains.",
+              desc: "Many implementation agencies disappear after go-live. Manomay stays - with dedicated support to handle updates, new features, and growing pains.",
               icon: <LifeBuoy className="w-6 h-6 text-brand" />
             },
             {
               title: "Global Market Expertise",
-              desc: "We understand global business practices — Sales Tax/VAT compliance, international logistics, and multi-region operations — and implement Odoo to match how your business actually runs.",
+              desc: "We understand global business practices - Sales Tax/VAT compliance, international logistics, and multi-region operations - and implement Odoo to match how your business actually runs.",
               icon: <Globe className="w-6 h-6 text-brand" />
             }
           ].map((adv, idx) => (

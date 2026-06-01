@@ -31,12 +31,12 @@ const ITProfessionalServices = () => {
   const results = [
     {
       title: "Zero Revenue Leakage",
-      desc: "Every logged hour flows automatically into billing — nothing is lost between timesheet and invoice.",
+      desc: "Every logged hour flows automatically into billing - nothing is lost between timesheet and invoice.",
       icon: <Clock className="w-6 h-6 text-emerald-500" />
     },
     {
       title: "Real-time Profitability",
-      desc: "Track budget vs. actual costs on every project as work happens — not at month end.",
+      desc: "Track budget vs. actual costs on every project as work happens - not at month end.",
       icon: <TrendingUp className="w-6 h-6 text-brand" />
     },
     {
@@ -46,7 +46,7 @@ const ITProfessionalServices = () => {
     },
     {
       title: "Global Resource Planning",
-      desc: "See team availability and workload across every engagement — balance delivery proactively.",
+      desc: "See team availability and workload across every engagement - balance delivery proactively.",
       icon: <Users className="w-6 h-6 text-indigo-500" />
     },
     {
@@ -56,7 +56,7 @@ const ITProfessionalServices = () => {
     },
     {
       title: "Scalable Infrastructure",
-      desc: "As you add consultants and clients, your systems grow with you — with role-based access and global reporting.",
+      desc: "As you add consultants and clients, your systems grow with you - with role-based access and global reporting.",
       icon: <ShieldCheck className="w-6 h-6 text-indigo-600" />
     }
   ];
@@ -64,7 +64,7 @@ const ITProfessionalServices = () => {
   const advisorAdvantage = [
     {
       title: "Billing Model Configuration",
-      desc: "We configure Odoo to match your specific model — fixed price, time & material, retainer, or milestones.",
+      desc: "We configure Odoo to match your specific model - fixed price, time & material, retainer, or milestones.",
       icon: <Layers className="w-6 h-6" />
     },
     {
@@ -187,7 +187,7 @@ const ITProfessionalServices = () => {
                 Work Earned vs. <span className="font-display italic font-normal text-brand">Collected.</span>
               </h3>
               <p className="text-lg text-slate-600 mb-8 leading-relaxed font-light">
-                For most services firms, the tragedy isn't bad work—it's bad systems. Project tools don't talk to timesheets. Timesheets don't connect to billing. Revenue leaks through every gap.
+                For most services firms, the tragedy isn't bad work - it's bad systems. Project tools don't talk to timesheets. Timesheets don't connect to billing. Revenue leaks through every gap.
               </p>
               <ul className="space-y-6">
                 {challenges.map((challenge, i) => (
@@ -211,7 +211,7 @@ const ITProfessionalServices = () => {
               <div className="absolute top-0 right-0 w-64 h-64 bg-brand/10 blur-[80px] rounded-full"></div>
               <h4 className="text-2xl font-bold mb-6 font-jakarta">The Solution: One Unbroken Flow</h4>
               <p className="text-slate-400 mb-8 leading-relaxed">
-                Odoo connects the entire delivery lifecycle—from winning a deal in CRM, to launching the project, logging time, and generating the invoice in one click.
+                Odoo connects the entire delivery lifecycle - from winning a deal in CRM, to launching the project, logging time, and generating the invoice in one click.
               </p>
               <div className="space-y-4">
                 {[

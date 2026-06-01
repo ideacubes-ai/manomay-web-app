@@ -68,7 +68,7 @@ export default function EEATSection() {
                 "10+ Years of Business & Technical Excellence",
                 "Specialized Hardware Integration (IoT & POS)",
                 "Elite InsurTech & Digital Transformation Strategies",
-                "End-to-End Execution — From Strategy to Deployment",
+                "End-to-End Execution - From Strategy to Deployment",
                 "Proven Track Record in the Caribbean & US Markets"
               ].map((item, i) => (
                 <li key={i} className="flex gap-3 items-start">

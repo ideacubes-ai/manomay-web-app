@@ -240,7 +240,7 @@ export default function Odoo() {
               </h3>
               <div className="space-y-6 text-lg text-slate-600 leading-relaxed font-medium">
                 <p>
-                  Running a business today means managing multiple operations at once — sales, inventory, accounting, HR, projects, and reporting. 
+                  Running a business today means managing multiple operations at once - sales, inventory, accounting, HR, projects, and reporting. 
                 </p>
                 <p>
                   For many growing companies, these processes are often handled through disconnected software, spreadsheets, and manual follow-ups. This creates delays, operational confusion, and unnecessary costs.
@@ -547,7 +547,7 @@ export default function Odoo() {
                  {[
                    { title: "Official Expertise", desc: "We bring deep technical and business process expertise to every implementation project." },
                    { title: "Customized ERP Solutions", desc: "No generic implementation approach. Every solution is tailored to your operations and business goals." },
-                   { title: "End-to-End Support", desc: "From consultation and implementation to training, customization, integration, and ongoing support — we handle everything." },
+                   { title: "End-to-End Support", desc: "From consultation and implementation to training, customization, integration, and ongoing support - we handle everything." },
                    { title: "Startup & SME Focus", desc: "We specialize in helping growing businesses implement enterprise-grade systems without enterprise-level complexity." },
                    { title: "Scalable Long-Term Partnership", desc: "As your business grows, we help scale and optimize your ERP ecosystem continuously." }
                  ].map((item, idx) => (

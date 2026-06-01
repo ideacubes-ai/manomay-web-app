@@ -24,11 +24,11 @@ export default function Manufacturing() {
   const challenges = [
     {
       title: "Production planning on guesswork",
-      description: "Without automated Material Requirements Planning, planners rely on spreadsheets and experience—leading to material shortages and idle time."
+      description: "Without automated Material Requirements Planning, planners rely on spreadsheets and experience - leading to material shortages and idle time."
     },
     {
       title: "No real-time shop floor visibility",
-      description: "Managers don't know what's happening until the end of the day—by which time problems have already compounded."
+      description: "Managers don't know what's happening until the end of the day - by which time problems have already compounded."
     },
     {
       title: "Quality defects found too late",
@@ -62,7 +62,7 @@ export default function Manufacturing() {
     },
     {
       title: "Full Traceability",
-      description: "Follow every component from supplier to finished product—including lots, serial numbers, and expiry dates.",
+      description: "Follow every component from supplier to finished product - including lots, serial numbers, and expiry dates.",
       icon: <History className="w-8 h-8 text-brand" />
     }
   ];

@@ -72,16 +72,16 @@ Don't let disconnected information hold you back – bring your business togethe
   {
     id: "making-ai-work-for-business-odoo-manomay",
     title: "Making AI Work for Your Business: A Simple Guide to Odoo AI and How Manomay Can Help",
-    excerpt: "We've all heard the buzz about Artificial Intelligence (AI) lately. It seems like every day there's a new tool promising to change the world. But for most business owners, the big question isn't 'what is AI?'—it's 'how can this actually help my business today?'",
+    excerpt: "We've all heard the buzz about Artificial Intelligence (AI) lately. It seems like every day there's a new tool promising to change the world. But for most business owners, the big question isn't 'what is AI?' - it's 'how can this actually help my business today?'",
     category: "Artificial Intelligence",
     author: "Manomay Global Solutions",
     date: "May 31, 2026",
     readTime: "5 min read",
     imageUrl: "/blog_images/blog_images_31-05-2026/image-blog-31-05-2026-1.jpg",
     content: `
-We've all heard the buzz about Artificial Intelligence (AI) lately. It seems like every day there's a new tool promising to change the world. But for most business owners, the big question isn't "what is AI?"—it's "how can this actually help my business today?"
+We've all heard the buzz about Artificial Intelligence (AI) lately. It seems like every day there's a new tool promising to change the world. But for most business owners, the big question isn't "what is AI?" - it's "how can this actually help my business today?"
 
-If you're using Odoo, or thinking about it, you're in luck. Odoo has integrated AI directly into the tools you use every day, making it practical, easy to use, and—most importantly—genuinely helpful.
+If you're using Odoo, or thinking about it, you're in luck. Odoo has integrated AI directly into the tools you use every day, making it practical, easy to use, and - most importantly - genuinely helpful.
 
 In this post, we'll break down what Odoo AI really does and why working with a partner like Manomay Global Solutions is the secret to getting it right.
 

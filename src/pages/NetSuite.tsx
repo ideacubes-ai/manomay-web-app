@@ -143,7 +143,7 @@ export default function NetSuite() {
                 <br className="hidden md:block"/> Implementation
               </h1>
               <p className="text-lg sm:text-xl text-slate-600 mb-10 leading-relaxed max-w-lg mx-auto lg:mx-0">
-                Unify finance, operations, and growth on a powerful cloud ERP—implemented right the first time.
+                Unify finance, operations, and growth on a powerful cloud ERP - implemented right the first time.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 mb-12 justify-center lg:justify-start">
@@ -238,7 +238,7 @@ export default function NetSuite() {
                 We help growing businesses implement Oracle NetSuite, a leading cloud ERP platform designed for scalability, financial control, and real-time visibility.
               </p>
               <p className="text-lg text-slate-500 leading-relaxed max-w-2xl font-light">
-                If you're dealing with multiple systems, reporting delays, or lack of control—we bring everything into one intelligent system.
+                If you're dealing with multiple systems, reporting delays, or lack of control - we bring everything into one intelligent system.
               </p>
             </motion.div>
           </div>
@@ -467,7 +467,7 @@ export default function NetSuite() {
               Scalable <span className="font-display italic font-normal text-brand">Enterprise</span> Growth.
             </h2>
             <p className="text-xl text-slate-300 mb-8 font-light leading-relaxed">
-              Let’s implement NetSuite the right way—strategically, securely, and efficiently.
+              Let’s implement NetSuite the right way - strategically, securely, and efficiently.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
               <Link to="/contact" className="bg-brand text-white px-10 py-5 rounded-full text-xl font-bold hover:bg-brand/90 transition-all shadow-2xl shadow-brand/20 flex items-center justify-center gap-3 group active:scale-95">
@@ -478,7 +478,7 @@ export default function NetSuite() {
 
             <div className="pt-8 border-t border-white/10 text-slate-400 font-medium italic">
               Spreadsheets can’t scale. Disconnected systems slow you down. <br className="hidden sm:block" />
-              <span className="text-white font-bold not-italic">NetSuite gives you control—We make it work for you.</span>
+              <span className="text-white font-bold not-italic">NetSuite gives you control - We make it work for you.</span>
             </div>
           </div>
         </div>

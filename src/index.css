@@ -74,8 +74,14 @@
 .markdown-body img {
   @apply w-full h-[400px] object-cover rounded-3xl shadow-2xl shadow-slate-200/50 my-12 border border-slate-100;
 }
+.markdown-body ul, .markdown-body ol {
+  @apply list-outside pl-6 space-y-3 mb-8 text-slate-600 text-lg;
+}
 .markdown-body ul {
-  @apply list-disc list-outside pl-6 space-y-3 mb-8 text-slate-600 text-lg;
+  @apply list-disc;
+}
+.markdown-body ol {
+  @apply list-decimal;
 }
 .markdown-body li strong {
   @apply text-slate-900 font-bold;

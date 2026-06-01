@@ -21,37 +21,37 @@ import SEO from "../components/SEO";
 const features = [
   {
     title: "Certified Odoo Partner",
-    description: "Manomay is a certified Odoo implementation partner — meaning our team has passed Odoo's technical and functional assessments. You are not getting someone learning on your project.",
+    description: "Manomay is a certified Odoo implementation partner - meaning our team has passed Odoo's technical and functional assessments. You are not getting someone learning on your project.",
     icon: <Award className="w-8 h-8" />
   },
   {
     title: "Implementation, not just installation",
-    description: "Any reseller can install Odoo. Manomay implements it — meaning we understand your business first, design the configuration around your workflows, and deliver a system your team can actually use.",
+    description: "Any reseller can install Odoo. Manomay implements it - meaning we understand your business first, design the configuration around your workflows, and deliver a system your team can actually use.",
     icon: <LayoutDashboard className="w-8 h-8" />
   },
   {
     title: "Industry-specific playbooks",
-    description: "We have delivered Odoo across Retail, Manufacturing, IT Services, and CRM-driven businesses. We bring pre-built configurations, tested workflows, and lessons learned from real deployments — not a blank canvas.",
+    description: "We have delivered Odoo across Retail, Manufacturing, IT Services, and CRM-driven businesses. We bring pre-built configurations, tested workflows, and lessons learned from real deployments - not a blank canvas.",
     icon: <Layers className="w-8 h-8" />
   },
   {
     title: "Fixed-scope, transparent pricing",
-    description: "No surprise invoices. Manomay scopes every implementation clearly upfront — with defined deliverables, timelines, and costs — so you know exactly what you are getting before you sign.",
+    description: "No surprise invoices. Manomay scopes every implementation clearly upfront - with defined deliverables, timelines, and costs - so you know exactly what you are getting before you sign.",
     icon: <DollarSign className="w-8 h-8" />
   },
   {
     title: "Training as a core deliverable",
-    description: "Every Manomay implementation includes structured, role-specific training for every user — not a 30-minute overview and a user manual. We measure success by adoption, not just go-live.",
+    description: "Every Manomay implementation includes structured, role-specific training for every user - not a 30-minute overview and a user manual. We measure success by adoption, not just go-live.",
     icon: <GraduationCap className="w-8 h-8" />
   },
   {
     title: "Dedicated post-launch support",
-    description: "Manomay offers ongoing support contracts after implementation — including system updates, new module additions, and a dedicated point of contact who knows your setup.",
+    description: "Manomay offers ongoing support contracts after implementation - including system updates, new module additions, and a dedicated point of contact who knows your setup.",
     icon: <HeartHandshake className="w-8 h-8" />
   },
   {
     title: "Global Market Expertise",
-    description: "We understand global business practices — Sales Tax/VAT compliance, international logistics, and multi-region operations — and implement Odoo to match how your business actually runs.",
+    description: "We understand global business practices - Sales Tax/VAT compliance, international logistics, and multi-region operations - and implement Odoo to match how your business actually runs.",
     icon: <Globe className="w-8 h-8" />
   }
 ];
